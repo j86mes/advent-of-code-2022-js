@@ -1,0 +1,28 @@
+{
+  "name": "day1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "day1.js",
+  "scripts": {
+    "day1": "node day1.js",
+    "day2": "node day2.js",
+    "day2part2": "node day2part2.js",
+    "day3": "node day3.js",
+    "day3part2": "node day3part2.js",
+    "day4": "node day4.js",
+    "day4part2": "node day4part2.js",
+    "day5": "node day5.js",
+    "day5part2": "node day5part2.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.30.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  },
+  "dependencies": {
+    "just-clone": "^6.2.0"
+  }
+}
