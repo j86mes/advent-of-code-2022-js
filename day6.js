@@ -19,19 +19,12 @@ const lineHandlerFunction = (input, uniqueSequenceLength) => {
   }
 };
 
-const lineHandlerA = (input) => {
-  lineHandlerFunction(input, 4);
-};
-const lineHandlerB = (input) => {
-  lineHandlerFunction(input, 14);
-};
-
 // part a
-readFileLineByLine('./input/day6.txt', lineHandlerA).then(() => {
+readFileLineByLine('./input/day6.txt', lineHandlerFunction, 4).then(() => {
   console.log(messageStartIndex);
 
   // followed by part b
-  readFileLineByLine('./input/day6.txt', lineHandlerB).then(() => {
+  readFileLineByLine('./input/day6.txt', lineHandlerFunction, 14).then(() => {
     console.log(messageStartIndex);
   });
 });

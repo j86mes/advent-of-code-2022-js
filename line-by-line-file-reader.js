@@ -1,7 +1,7 @@
 const fs = require('fs');
 const readline = require('readline');
 
-const readFileLineByLine = async (filepath, lineHandler) => {
+const readFileLineByLine = async (filepath, lineHandler, ...others) => {
   const fileStream = fs.createReadStream(filepath);
 
   const rl = readline.createInterface({
@@ -13,7 +13,7 @@ const readFileLineByLine = async (filepath, lineHandler) => {
 
   // eslint-disable-next-line no-restricted-syntax
   for await (const line of rl) {
-    lineHandler(line);
+    lineHandler(line, ...others);
   }
 };
 
