@@ -14,7 +14,9 @@
     "day5": "node day5.js",
     "day5part2": "node day5part2.js",
     "day6": "node day6.js",
-    "day7": "node day7.js"
+    "day7": "node day7.js",
+    "day8": "node day8.js",
+    "day8part2": "node day8part2.js"
   },
   "author": "",
   "license": "ISC",
